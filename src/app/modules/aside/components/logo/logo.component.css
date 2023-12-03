@@ -1,0 +1,31 @@
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo span {
+    animation: logo__animate 8s ease-in-out infinite 0.1s;
+    background-image: url("/assets/images/logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    margin: 1rem 0;
+    max-width: 100px;
+    width: 80%;
+}
+
+@keyframes logo__animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
