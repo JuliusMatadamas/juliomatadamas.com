@@ -1,0 +1,42 @@
+.toggler {
+    align-items: center;
+    background: var(--color-light-1);
+    border: 1px solid var(--color-dark-2);
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    height: 40px;
+    left: 300px;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    width: 45px;
+}
+
+.toggler span {
+    background: var(--color-purple-3);
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.toggler span::before {
+    background: var(--color-purple-3);
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: -6px;
+    width: 18px;
+}
+
+.toggler span::after {
+    background: var(--color-purple-3);
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    width: 18px;
+}

@@ -5,6 +5,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { NavComponent } from './components/nav/nav.component';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { TogglerComponent } from './components/toggler/toggler.component';
 
 
 
@@ -12,7 +13,8 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
     declarations: [
         AsideComponent,
         LogoComponent,
-        NavComponent
+        NavComponent,
+        TogglerComponent
     ],
     exports: [
         AsideComponent
