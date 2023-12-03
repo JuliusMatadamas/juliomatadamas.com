@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AsideComponent } from './components/aside/aside.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { NavComponent } from './components/nav/nav.component';
-import { RouterLink } from "@angular/router";
+import {RouterLink, RouterLinkActive} from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 
@@ -20,7 +20,8 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
     imports: [
         CommonModule,
         RouterLink,
-        FontAwesomeModule
+        FontAwesomeModule,
+        RouterLinkActive
     ]
 })
 export class AsideModule { }

@@ -1,0 +1,33 @@
+ul {
+    list-style: none;
+    margin-top: 30px;
+    padding: 3rem;
+}
+
+ul li {
+    margin-bottom: 2rem;
+}
+
+ul li a {
+    border-bottom: 1px solid var(--color-dark-3);
+    color: var(--color-dark-3);
+    display: block;
+    font-size: .875rem;
+    font-weight: 600;
+    padding: 5px 15px;
+    transition: .3s;
+}
+
+ul li a:hover {
+    color: var(--color-purple-3);
+    font-weight: 900;
+}
+
+.active-link {
+    color: var(--color-purple-3) !important;
+    font-weight: 900 !important;
+}
+
+.ng-fa-icon {
+    margin-right: 10px;
+}
