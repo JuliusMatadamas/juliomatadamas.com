@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faChartBar, faDatabase, faDesktop, faLaptop, faMobile, faServer } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-services',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent {
-
+    faChartBar = faChartBar;
+    faDatabase = faDatabase;
+    faDesktop = faDesktop;
+    faLaptop = faLaptop;
+    faMobile = faMobile;
+    faServer = faServer;
 }
