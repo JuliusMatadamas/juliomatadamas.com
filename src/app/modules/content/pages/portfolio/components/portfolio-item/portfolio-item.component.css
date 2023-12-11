@@ -1,0 +1,17 @@
+.portfolio-item-inner {
+    border: 6px solid var(--color-light-0);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portfolio-item-img img {
+    display: block;
+    width: 100%;
+}
+
+.portfolio-item-img figcaption {
+    font-size: .65rem;
+    margin: 20px 10px;
+    text-align: center;
+}
