@@ -15,16 +15,23 @@
     transition: all 0.3s ease;
 }
 
+.services-items {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
 .service-item {
-    flex: 0 0 33.33%;
-    margin-bottom: 30px;
-    max-width: 33.33%;
+    margin: auto;
+    max-width: 370px;
+    width: 80%;
 }
 
 .service-item-inner {
     background-color: var(--color-light-0);
     border: 1px solid #c5c5c5;
     border-radius: 10px;
+    min-height: 700px;
     padding: 30px;
     text-align: center;
     transition: all 0.3s ease;

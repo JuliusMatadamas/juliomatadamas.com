@@ -1,1 +1,82 @@
-<p>contact works!</p>
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Contacto</h2>
+            </div>
+        </div>
+
+        <h3 class="contact-title">Requieres de mayor información?</h3>
+        <h4 class="contact-subtitle">Puedes contactarme por alguno de los siguientes medios.</h4>
+
+        <div class="contact-items row">
+            <div class="contact-info-item">
+                <div class="icon">
+                    <fa-icon [icon]="faPhone"></fa-icon>
+                </div>
+                <h4>Teléfono:</h4>
+                <p>+52 86831 19901</p>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="icon">
+                    <fa-icon [icon]="faEnvelope"></fa-icon>
+                </div>
+                <h4>Email:</h4>
+                <p>contacto@juliomatadamas.com</p>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="icon">
+                    <fa-icon [icon]="faLinkedin"></fa-icon>
+                </div>
+                <h4>Linkedin:</h4>
+                <p>linkedin/JulioMatadamas</p>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="icon">
+                    <fa-icon [icon]="faGithub"></fa-icon>
+                </div>
+                <h4>Github:</h4>
+                <p>github/JulioMatadamas</p>
+            </div>
+        </div>
+
+        <h4 class="contact-subtitle">Si lo prefieres, envíame un mensaje directo mediante el siguiente formulario, te responderé lo antes posible.</h4>
+
+        <div class="contact-form-container row">
+            <div class="contact-form-left">
+                <div class="input__wrapper">
+                    <input type="text" name="name" id="name" placeholder="Tu nombre" class="input__field">
+                    <label for="name" class="input__label">Nombre</label>
+                </div>
+
+                <div class="input__wrapper">
+                    <input type="email" name="email" id="email" placeholder="Tu email" class="input__field">
+                    <label for="email" class="input__label">Email</label>
+                </div>
+
+                <div class="input__wrapper">
+                    <input type="tel" name="phone" id="phone" placeholder="Tu teléfono" class="input__field">
+                    <label for="phone" class="input__label">Teléfono</label>
+                </div>
+
+                <div class="input__wrapper">
+                    <input type="text" name="subject" id="subject" placeholder="Tu asunto" class="input__field">
+                    <label for="subject" class="input__label">Asunto</label>
+                </div>
+            </div>
+            <div class="contact-form-right">
+                <div class="input__wrapper">
+                    <textarea name="message" id="message" cols="30" rows="6" placeholder="Tu mensaje" class="input__field"></textarea>
+                    <label for="message" class="input__label">Mensaje</label>
+                </div>
+
+                <div class="input__wrapper">
+                    <button class="btn" type="submit">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
