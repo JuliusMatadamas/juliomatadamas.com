@@ -14,12 +14,27 @@
         </div>
 
         <div class="portfolio-items row">
-            <app-portfolio-item class="portfolio-item padd-15"></app-portfolio-item>
-            <app-portfolio-item class="portfolio-item padd-15"></app-portfolio-item>
-            <app-portfolio-item class="portfolio-item padd-15"></app-portfolio-item>
-            <app-portfolio-item class="portfolio-item padd-15"></app-portfolio-item>
-            <app-portfolio-item class="portfolio-item padd-15"></app-portfolio-item>
-            <app-portfolio-item class="portfolio-item padd-15"></app-portfolio-item>
+            <div class="portfolio-item shadow-dark">
+                <figure class="portfolio-item-img">
+                    <img [src]="imgSicoi" alt="" />
+                    <figcaption>
+                        <h4>SICOI</h4>
+                        <p>Aplicación web para gestión de inventario.</p>
+                        <fa-icon [icon]="faHandPointer" class="portfolio-item-icon"></fa-icon>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="portfolio-item shadow-dark">
+                <figure class="portfolio-item-img">
+                    <img [src]="imgVNotes" alt="" />
+                    <figcaption>
+                        <h4>V-Notes</h4>
+                        <p>Aplicación web para registro de notas</p>
+                        <fa-icon [icon]="faHandPointer" class="portfolio-item-icon"></fa-icon>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
     </div>
 </section>

@@ -63,3 +63,13 @@
     line-height: 25px;
     text-align: justify;
 }
+
+
+@media screen and (max-width: 1039px) {
+    .service-item {
+        max-width: 80%;
+    }
+    .service-item-inner {
+        min-height: 100px;
+    }
+}

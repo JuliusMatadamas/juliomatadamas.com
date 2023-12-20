@@ -97,25 +97,36 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .hello {
         font-size: 22px;
+        text-align: center;
     }
     .hello span {
         font-size: 24px;
     }
+    .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+    }
     .home-info {
-        max-width: 60%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 2;
     }
     .home-info p {
-        font-size: 18px;
-        text-align: justify;
-    }
-    .home-img {
-        max-width: 40%;
+        font-size: 16px;
+        margin-bottom: 20px;
     }
     .home-img img {
-        width: 300px;
+        margin: auto;
+        max-width: 300px;
+        width: 85%;
     }
     .my-profession {
         font-size: 22px;
+        text-align: center;
+    }
+    .row {
+        text-align: center;
     }
 }
 

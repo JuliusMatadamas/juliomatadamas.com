@@ -2,16 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { PortfolioItemComponent } from './components/portfolio-item/portfolio-item.component';
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 
 
 @NgModule({
-  declarations: [
-    PortfolioComponent,
-    PortfolioItemComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [
+        PortfolioComponent,
+        PortfolioItemComponent
+    ],
+    imports: [
+        CommonModule,
+        FontAwesomeModule
+    ]
 })
 export class PortfolioModule { }

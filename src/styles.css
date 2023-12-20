@@ -141,6 +141,7 @@ section {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 20px;
+    text-align: center;
     transition: all 0.3s ease;
     white-space: nowrap;
 }
@@ -208,14 +209,14 @@ section {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/*@media screen and (min-width: 768px) and (max-width: 991px) {
     aside {
         left: -270px;
     }
     main {
         padding-left: 0;
     }
-}
+}*/
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
     aside {
