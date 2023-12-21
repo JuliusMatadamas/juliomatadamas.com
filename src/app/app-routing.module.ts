@@ -6,6 +6,8 @@ import { ContactComponent } from "./modules/content/pages/contact/components/con
 import { PortfolioComponent } from "./modules/content/pages/portfolio/components/portfolio/portfolio.component";
 import { ServicesComponent } from "./modules/content/pages/services/components/services/services.component";
 import { ErrorComponent } from "./modules/content/pages/error/components/error/error.component";
+import { SicoiComponent } from "./modules/content/pages/portfolio/components/sicoi/sicoi.component";
+import { VNotesComponent } from "./modules/content/pages/portfolio/components/v-notes/v-notes.component";
 
 const routes: Routes = [
     {
@@ -48,7 +50,23 @@ const routes: Routes = [
         component: PortfolioComponent,
         data: {
             title: 'Portfolio'
-        }
+        },
+        children: [
+            {
+                path: 'sicoi',
+                component: SicoiComponent,
+                data: {
+                    title: 'Sicoi'
+                }
+            },
+            {
+                path: 'vnotes',
+                component: VNotesComponent,
+                data: {
+                    title: 'VNotes'
+                }
+            }
+        ]
     },
     {
         path: 'services',

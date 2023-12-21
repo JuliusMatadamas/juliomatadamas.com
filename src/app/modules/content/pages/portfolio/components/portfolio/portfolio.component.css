@@ -1,3 +1,48 @@
+.modal {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+.modal-display {
+    display: none;
+}
+.modal-display.show {
+    display: flex;
+}
+
+.modal-container {
+    background: var(--color-light-0);
+    border-radius: 10px;
+    height: 80%;
+    position: relative;
+    width: 80%;
+}
+
+.modal-button {
+    align-items: center;
+    background: var(--color-light-0);
+    border-radius: 30px;
+    display: flex;
+    font-size: 2rem;
+    height: 60px;
+    justify-content: center;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    width: 60px;
+}
+.modal-button:hover {
+    cursor: pointer;
+}
+
 .portfolio-items {
     align-items: center;
     display: flex;

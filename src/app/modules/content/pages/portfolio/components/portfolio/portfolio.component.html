@@ -14,7 +14,7 @@
         </div>
 
         <div class="portfolio-items row">
-            <div class="portfolio-item shadow-dark">
+            <a routerLink="sicoi" class="portfolio-item shadow-dark" (click)="toggleModal()">
                 <figure class="portfolio-item-img">
                     <img [src]="imgSicoi" alt="" />
                     <figcaption>
@@ -23,9 +23,9 @@
                         <fa-icon [icon]="faHandPointer" class="portfolio-item-icon"></fa-icon>
                     </figcaption>
                 </figure>
-            </div>
+            </a>
 
-            <div class="portfolio-item shadow-dark">
+            <a routerLink="vnotes" class="portfolio-item shadow-dark" (click)="toggleModal()">
                 <figure class="portfolio-item-img">
                     <img [src]="imgVNotes" alt="" />
                     <figcaption>
@@ -34,7 +34,16 @@
                         <fa-icon [icon]="faHandPointer" class="portfolio-item-icon"></fa-icon>
                     </figcaption>
                 </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-display" [ngClass]="{'show':showModal}" (click)="handleModalClick()">
+        <div class="modal-container" (click)="handleModalContainerClick($event)">
+            <div class="modal-button" (click)="toggleModal()">
+                <fa-icon [icon]="faCircleXmark"></fa-icon>
             </div>
+            <router-outlet></router-outlet>
         </div>
     </div>
 </section>
