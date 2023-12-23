@@ -1,8 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicesComponent } from './components/services/services.component';
+import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
+const routes = [
+    {
+        path: '',
+        component: ServicesComponent,
+        data: {
+            title: 'Services'
+        }
+    }
+];
 
 @NgModule({
     declarations: [
@@ -10,6 +20,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
     ],
     imports: [
         CommonModule,
+        RouterModule.forChild(routes),
         FontAwesomeModule
     ]
 })

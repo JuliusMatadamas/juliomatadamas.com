@@ -1,76 +1,53 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from "./modules/content/pages/home/components/home/home.component";
-import { AboutComponent } from "./modules/content/pages/about/components/about/about.component";
-import { ContactComponent } from "./modules/content/pages/contact/components/contact/contact.component";
-import { PortfolioComponent } from "./modules/content/pages/portfolio/components/portfolio/portfolio.component";
-import { ServicesComponent } from "./modules/content/pages/services/components/services/services.component";
 import { ErrorComponent } from "./modules/content/pages/error/components/error/error.component";
-import { SicoiComponent } from "./modules/content/pages/portfolio/components/sicoi/sicoi.component";
-import { VNotesComponent } from "./modules/content/pages/portfolio/components/v-notes/v-notes.component";
 
 const routes: Routes = [
     {
         path: '',
-        component: HomeComponent,
+        loadChildren: () => import('./modules/content/pages/home/home.module').then(m => m.HomeModule),
         data: {
             title: 'Home',
         }
     },
     {
         path: 'index',
-        component: HomeComponent,
+        loadChildren: () => import('./modules/content/pages/home/home.module').then(m => m.HomeModule),
         data: {
             title: 'Home'
         }
     },
     {
         path: 'home',
-        component: HomeComponent,
+        loadChildren: () => import('./modules/content/pages/home/home.module').then(m => m.HomeModule),
         data: {
             title: 'Home'
         }
     },
     {
         path: 'about',
-        component: AboutComponent,
+        loadChildren: () => import('./modules/content/pages/about/about.module').then(m => m.AboutModule),
         data: {
             title: 'About'
         }
     },
     {
         path: 'contact',
-        component: ContactComponent,
+        loadChildren: () => import('./modules/content/pages/contact/contact.module').then(m => m.ContactModule),
         data: {
             title: 'Contact'
         }
     },
     {
         path: 'portfolio',
-        component: PortfolioComponent,
+        loadChildren: () => import('./modules/content/pages/portfolio/portfolio.module').then(m => m.PortfolioModule),
         data: {
             title: 'Portfolio'
-        },
-        children: [
-            {
-                path: 'sicoi',
-                component: SicoiComponent,
-                data: {
-                    title: 'Sicoi'
-                }
-            },
-            {
-                path: 'vnotes',
-                component: VNotesComponent,
-                data: {
-                    title: 'VNotes'
-                }
-            }
-        ]
+        }
     },
     {
         path: 'services',
-        component: ServicesComponent,
+        loadChildren: () => import('./modules/content/pages/services/services.module').then(m => m.ServicesModule),
         data: {
             title: 'Services'
         }
