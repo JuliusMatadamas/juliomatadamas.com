@@ -1,3 +1,26 @@
+.btn[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+input[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+input[disabled] + label {
+    background: transparent;
+}
+
+textarea[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+textarea[disabled] + label {
+    background: transparent;
+}
+
 .contact-title {
     color: var(--color-purple-1);
     font-size: 25px;
@@ -133,7 +156,7 @@ label, .input__field:focus ~ .input__label {
 
 
 
-.input__wrapper button {
+.input__wrapper .btn {
     margin-left: 50%;
     width: 50%;
 }

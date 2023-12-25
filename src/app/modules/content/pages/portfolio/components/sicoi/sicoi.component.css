@@ -1,0 +1,83 @@
+h4 {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 400;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+video {
+    max-width: 800px;
+    width: 90%;
+}
+
+.portfolio-container-description, .portfolio-container-tools {
+    margin: auto;
+    max-width: 800px;
+    text-align: justify;
+    width: 90%;
+}
+.portfolio-container-description ul {
+    padding-left: 20px;
+}
+.portfolio-container-tools {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.portfolio-container-item h5 {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
+    width: 90%;
+}
+
+
+.portfolio-container-video {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio-container-item {
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    padding-bottom: 40px;
+}
+
+.portfolio-container-item::-webkit-scrollbar {
+    width: 20px;
+}
+
+.portfolio-container-item::-webkit-scrollbar-track {
+    background: var(--color-light-0);
+}
+
+.portfolio-container-item::-webkit-scrollbar-thumb {
+    background-color: var(--color-light-3);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--color-light-2);  /* creates padding around scroll thumb */
+}
+/* Estilos para Firefox */
+.portfolio-container-item {
+    scrollbar-width: 20px;
+    scrollbar-color: var(--color-light-3) var(--color-light-0);
+}
+
+.portfolio-container-item:hover {
+    scrollbar-color: var(--color-light-3) var(--color-light-1);
+}
+
+.tool-item {
+    align-items: center;
+    font-size: 2.5rem;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+}

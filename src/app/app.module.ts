@@ -7,6 +7,7 @@ import { AsideModule } from "./modules/aside/aside.module";
 import { ContentModule } from "./modules/content/content.module";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         FontAwesomeModule,
         BrowserAnimationsModule
     ],
-    providers: [],
+    providers: [
+        {
+            provide: LocationStrategy,
+            useClass: HashLocationStrategy
+        }
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,6 +9,7 @@ import { ServicesModule } from "./pages/services/services.module";
 import { MainComponent } from './pages/main.component';
 import { RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+
 @NgModule({
     declarations: [
 
@@ -26,7 +27,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
         PortfolioModule,
         ServicesModule,
         RouterOutlet,
-        FontAwesomeModule
+        FontAwesomeModule,
     ]
 })
 export class ContentModule {

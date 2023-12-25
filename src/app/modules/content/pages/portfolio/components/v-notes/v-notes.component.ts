@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faBootstrap, faCss3Alt, faHtml5, faVuejs } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-v-notes',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./v-notes.component.css']
 })
 export class VNotesComponent {
-
+    faBootstrap = faBootstrap;
+    faCss3Alt = faCss3Alt;
+    faHtml5 = faHtml5;
+    faVuejs = faVuejs;
+    faGlobe = faGlobe;
 }
