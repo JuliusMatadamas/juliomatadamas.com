@@ -1,7 +1,7 @@
 .toggler {
     align-items: center;
     background: var(--color-light-1);
-    border: 1px solid var(--color-dark-2);
+    border: 1px solid var(--color-purple-3);
     border-radius: 5px;
     cursor: pointer;
     display: none;
@@ -39,4 +39,11 @@
     position: absolute;
     top: 6px;
     width: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    .toggler {
+        display: flex;
+        left: 30px;
+    }
 }
