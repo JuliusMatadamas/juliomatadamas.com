@@ -10,6 +10,7 @@
     justify-content: center;
     position: fixed;
     top: 20px;
+    transition: all 0.3s ease;
     width: 45px;
 }
 
@@ -45,5 +46,8 @@
     .toggler {
         display: flex;
         left: 30px;
+    }
+    .toggler.open {
+        left: 300px;
     }
 }

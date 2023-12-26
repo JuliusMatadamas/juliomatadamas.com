@@ -222,8 +222,14 @@ section {
     aside {
         left: -270px;
     }
+    aside.open {
+        left: 0;
+    }
     main {
         padding-left: 0;
+    }
+    main.open {
+        padding-left: 270px;
     }
 }
 
@@ -231,7 +237,13 @@ section {
     aside {
         left: -270px;
     }
+    aside.open {
+        left: 0;
+    }
     main {
         padding-left: 0;
+    }
+    main.open {
+        padding-left: 270px;
     }
 }
