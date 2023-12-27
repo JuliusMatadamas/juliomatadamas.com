@@ -8,6 +8,7 @@ import { ContentModule } from "./modules/content/content.module";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,12 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
         BrowserModule,
         ContentModule,
         FontAwesomeModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        ToastrModule.forRoot({
+            timeOut: 3000, // Duración en milisegundos
+            positionClass: 'toast-top-right', // Posición de las notificaciones
+            preventDuplicates: true,
+        })
     ],
     providers: [
         {
