@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToggleService } from "../../../../../../services/toggle.service";
 import Typed from 'typed.js';
 
 @Component({
@@ -6,7 +7,11 @@ import Typed from 'typed.js';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit{
+
+    constructor(private toggleService:ToggleService) {
+    }
+
     ngOnInit() {
         const options = {
             strings: ['Analista de Datos', 'Desarrollador Fullstack', 'Desarrollador Frontend', 'Desarrollador Backend', 'Programador de aplicaciones', 'Administrador de Bases de Datos'],
@@ -14,7 +19,8 @@ export class HomeComponent implements OnInit {
             loop: true,
             fadeOut: true,
         };
-
         const typed = new Typed('.typing', options);
+
+        this.toggleService.setToFalseToggle();
     }
 }

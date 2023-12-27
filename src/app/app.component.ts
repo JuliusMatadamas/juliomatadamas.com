@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { ToggleService } from "./services/toggle.service";
 
 @Component({
     selector: 'app-root',
@@ -8,4 +9,12 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
     title:string = 'juliomatadamas';
+
+    constructor(private toggleService:ToggleService) {
+    }
+
+    @HostListener('window:resize', ['$event'])
+    onResize() {
+        this.toggleService.setToFalseToggle();
+    }
 }

@@ -12,4 +12,8 @@ export class ToggleService {
     toggle() {
         this.isOpenSubject.next(!this.isOpenSubject.value);
     }
+
+    setToFalseToggle() {
+        this.isOpenSubject.next(false);
+    }
 }

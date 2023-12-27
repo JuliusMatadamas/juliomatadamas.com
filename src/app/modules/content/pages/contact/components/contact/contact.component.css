@@ -154,12 +154,33 @@ label, .input__field:focus ~ .input__label {
     outline: 1px solid #b73f3f;
 }
 
-
-
 .input__wrapper .btn {
     margin-left: 50%;
     width: 50%;
 }
+
+.is-valid {
+    border: 1px solid #198754 !important;
+}
+.is-valid:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+.valid-feedback {
+    color: #198754;
+}
+
+.is-invalid {
+    border: 1px solid #ea868f !important;
+}
+.is-invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+.invalid-feedback {
+    color: #dc3545;
+}
+
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .contact-form-left {

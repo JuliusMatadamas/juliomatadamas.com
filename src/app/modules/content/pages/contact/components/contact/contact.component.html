@@ -48,32 +48,69 @@
         <form [formGroup]="contactForm" class="contact-form-container row" (ngSubmit)="submitForm()">
             <div class="contact-form-left">
                 <div class="input__wrapper">
-                    <input type="text" formControlName="name" id="name" placeholder="Tu nombre" class="input__field">
+                    <input
+                        class="input__field"
+                        formControlName="name"
+                        id="name"
+                        placeholder="Tu nombre"
+                        type="text"
+                        (keyup)="onNameChange()"
+                    >
                     <label for="name" class="input__label">Nombre</label>
                     <div id="name-feedback" class="feedback">&nbsp;</div>
                 </div>
 
                 <div class="input__wrapper">
-                    <input type="email" formControlName="email" id="email" placeholder="Tu email" class="input__field">
+                    <input
+                        class="input__field"
+                        formControlName="email"
+                        id="email"
+                        placeholder="Tu email"
+                        type="email"
+                        (keyup)="onEmailChange()"
+                    >
                     <label for="email" class="input__label">Email</label>
                     <div id="email-feedback" class="feedback">&nbsp;</div>
                 </div>
 
                 <div class="input__wrapper">
-                    <input type="tel" formControlName="phone" id="phone" placeholder="Tu teléfono" class="input__field">
+                    <input
+                        class="input__field"
+                        formControlName="phone"
+                        id="phone"
+                        maxlength="10"
+                        placeholder="Tu teléfono"
+                        type="tel"
+                        (keyup)="onPhoneChange()"
+                    >
                     <label for="phone" class="input__label">Teléfono</label>
                     <div id="phone-feedback" class="feedback">&nbsp;</div>
                 </div>
 
                 <div class="input__wrapper">
-                    <input type="text" formControlName="subject" id="subject" placeholder="Tu asunto" class="input__field">
+                    <input
+                        class="input__field"
+                        formControlName="subject"
+                        id="subject"
+                        placeholder="Tu asunto"
+                        type="text"
+                        (keyup)="onSubjectChange()"
+                    >
                     <label for="subject" class="input__label">Asunto</label>
                     <div id="subject-feedback" class="feedback">&nbsp;</div>
                 </div>
             </div>
             <div class="contact-form-right">
                 <div class="input__wrapper">
-                    <textarea formControlName="message" id="message" cols="30" rows="6" placeholder="Tu mensaje" class="input__field"></textarea>
+                    <textarea
+                        class="input__field"
+                        cols="30"
+                        formControlName="message"
+                        id="message"
+                        placeholder="Tu mensaje"
+                        rows="6"
+                        (keyup)="onMessageChange()"
+                    ></textarea>
                     <label for="message" class="input__label">Mensaje</label>
                     <div id="message-feedback" class="feedback">&nbsp;</div>
                 </div>

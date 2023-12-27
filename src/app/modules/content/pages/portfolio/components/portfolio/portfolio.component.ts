@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { ToggleService } from "../../../../../../services/toggle.service";
 import { faHandPointer, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
@@ -7,7 +8,7 @@ import { faHandPointer, faCircleXmark } from "@fortawesome/free-solid-svg-icons"
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css']
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements OnInit {
     imgSicoi: string = 'assets/images/portfolio/sicoi_thumbnail.png';
     imgVNotes: string = 'assets/images/portfolio/v-notes_thumbnail.png';
     faHandPointer = faHandPointer;
@@ -15,7 +16,11 @@ export class PortfolioComponent {
 
     showModal: boolean = false;
 
-    constructor(private location: Location) {
+    constructor(private toggleService: ToggleService ,private location: Location) {
+    }
+
+    ngOnInit() {
+        this.toggleService.setToFalseToggle()
     }
 
     handleModalClick() {

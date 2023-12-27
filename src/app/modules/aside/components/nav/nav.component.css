@@ -31,3 +31,21 @@ ul li a:hover {
 .ng-fa-icon {
     margin-right: 10px;
 }
+
+@media screen and (max-height: 625px) {
+    ul {
+        margin-top: 130px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    ul {
+        height: calc(100% - 150px);
+        left: 0;
+        margin: initial;
+        overflow-y: scroll;
+        position: absolute;
+        top: 130px;
+        width: 100%;
+    }
+}
